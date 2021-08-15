@@ -6,13 +6,19 @@
 	"scripts": {
 		"clean": "rimraf _site",
 		"dev": "eleventy --serve",
-		"build": "yarn clean && ELEVENTY_ENV=production eleventy"
+		"build:styles": "postcss src/styles/main.css > _site/styles.css",
+		"build": "yarn clean && ELEVENTY_ENV=production eleventy && NODE_ENV=production yarn build:styles"
 	},
 	"keywords": [],
 	"author": "Fiqri Syah Redha",
 	"license": "ISC",
 	"devDependencies": {
 		"@11ty/eleventy": "^0.12.1",
-		"rimraf": "^3.0.2"
+		"autoprefixer": "^10.3.1",
+		"cssnano": "^5.0.7",
+		"postcss": "^8.3.6",
+		"postcss-cli": "^8.3.1",
+		"rimraf": "^3.0.2",
+		"tailwindcss": "^2.2.7"
 	}
 }
