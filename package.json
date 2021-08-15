@@ -1,0 +1,18 @@
+{
+	"name": "fiqri.my.id",
+	"version": "1.0.0",
+	"description": "Fiqri Syah Redha's website",
+	"main": "index.js",
+	"scripts": {
+		"clean": "rimraf _site",
+		"dev": "eleventy --serve",
+		"build": "yarn clean && ELEVENTY_ENV=production eleventy"
+	},
+	"keywords": [],
+	"author": "Fiqri Syah Redha",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.12.1",
+		"rimraf": "^3.0.2"
+	}
+}
