@@ -1,4 +1,6 @@
 module.exports = (eleventyConfig) => {
+	eleventyConfig.addPassthroughCopy('./src/assets');
+
 	return {
 		HTMLTemplateEngine: 'njk',
 		pathPrefix: '/',

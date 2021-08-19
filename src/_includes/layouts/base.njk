@@ -3,10 +3,12 @@
   <head>
     {% include '../partials/head.njk' %}
   </head>
-  <body class="font-mono">
-		<header class="md:container md:mx-auto">
-			{% include '../partials/navbar.njk' %}
+  <body class="mx-auto font-mono max-w-screen-md">
+		<header>
+			{% include '../components/navbar.njk' %}
 		</header>
-    {{ content | safe }}
+		<main>
+			{{ content | safe }}
+		</main>
   </body>
 </html>
