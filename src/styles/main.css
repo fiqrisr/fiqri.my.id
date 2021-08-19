@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-btn {
+	@apply inline-block px-3 py-3 mr-4 rounded-xl hover:bg-gray-200 hover:text-blue-600;
+}
