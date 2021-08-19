@@ -1,8 +1,12 @@
 module.exports = {
-	purge: ['_site/**/*.html'],
+	mode: 'jit',
+	purge: ['_site/**/*.html', 'src/_includes/**/*.njk'],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
-		extend: {}
+		extend: {},
+		fontFamily: {
+			mono: ['Roboto Mono', 'monospace']
+		}
 	},
 	variants: {
 		extend: {}

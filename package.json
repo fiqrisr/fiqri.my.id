@@ -5,9 +5,10 @@
 	"main": "index.js",
 	"scripts": {
 		"clean": "rimraf _site",
-		"dev": "eleventy --serve",
-		"build:styles": "postcss src/styles/main.css > _site/styles.css",
-		"build": "yarn clean && ELEVENTY_ENV=production eleventy && NODE_ENV=production yarn build:styles"
+		"watch:css": "yarn tailwindcss -i ./src/styles/main.css -o ./_site/styles.css -w",
+		"dev": "concurrently \"ELEVENTY_ENV=development eleventy --serve\"  \"yarn watch:css\"",
+		"build:css": "postcss src/styles/main.css > _site/styles.css",
+		"build": "yarn clean && ELEVENTY_ENV=production eleventy && yarn build:css"
 	},
 	"keywords": [],
 	"author": "Fiqri Syah Redha",
@@ -15,6 +16,7 @@
 	"devDependencies": {
 		"@11ty/eleventy": "^0.12.1",
 		"autoprefixer": "^10.3.1",
+		"concurrently": "^6.2.1",
 		"cssnano": "^5.0.7",
 		"postcss": "^8.3.6",
 		"postcss-cli": "^8.3.1",

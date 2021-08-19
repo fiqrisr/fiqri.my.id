@@ -1,5 +1,3 @@
 ---
-layout: base.njk
+layout: home.njk
 ---
-
-# hello
