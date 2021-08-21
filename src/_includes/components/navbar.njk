@@ -1,44 +1,17 @@
-<nav class="flex flex-wrap items-center justify-between px-5 py-8">
-	<a href="/" class="text-xl font-semibold tracking-tight hover:text-blue-600">{ fiqri }</a>
-
-	<div class="flex items-center md:hidden">
-		<button class="outline-none mobile-menu-button">
-			<svg
-				class="w-8 h-6 text-gray-500"
-				x-show="!showMenu"
-				fill="none"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				stroke-width="2"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
-			>
-			<path d="M4 6h16M4 12h16M4 18h16"></path>
-			</svg>
-		</button>
+<nav class="items-center justify-between py-8 md:flex-wrap md:flex">
+	<div class="px-5">
+		<a href="/" class="text-xl font-semibold tracking-tight hover:text-blue-600">{ fiqri }</a>
 	</div>
 
-  <ul class="hidden md:block">
+  <ul class="fixed bottom-0 z-10 flex justify-center w-screen py-2 text-white bg-gray-700 md:text-gray-800 md:bg-white md:relative md:inset-0 md:w-auto">
     <li class="inline">
-      <a
-        href="#about"
-        class="nav-btn">
-				.about
-      </a>
+      <a href="#about" class="nav-btn">.about</a>
     </li>
     <li class="inline">
-      <a
-        href="#projects"
-        class="nav-btn">
-				.projects
-      </a>
+      <a href="#projects" class="nav-btn">.projects</a>
     </li>
-    <li class="inline">
-      <a
-        href="#contact"
-        class="nav-btn">
-				.contact
-      </a>
+		<li class="inline">
+			<a href="#contact"class="nav-btn">.contact</a>
     </li>
 	</ul>
 </nav>
