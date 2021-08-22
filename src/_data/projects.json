@@ -3,22 +3,37 @@
 		{
 			"title": "GoodEdu Student",
 			"image": "goodedu_student_logo.png",
-			"description": "lorem ipsum sir dolor amet",
-			"url": "goodedu.id"
+			"description": "This is my first real-world project when I worked as a front-end web developer at PT. Kita Super Tim.",
+			"url": "https://goodedu.id"
 		}
 	],
 	"labs": [
 		{
-			"title": "Restozoo",
-			"image": "restozoo_website.png",
-			"description": "",
-			"url": "restoozoo.netlify.app"
+			"title": "Belajar Statistika",
+			"image": "belajarstatistika_website.png",
+			"description": "Website that I created for my friend who is studying Statistics major.",
+			"url": "https://belajarstatistika.netlify.app",
+			"source": "https://github.com/fiqrisr/belajar-statisika"
 		},
 		{
 			"title": "Restozoo",
 			"image": "restozoo_website.png",
-			"description": "",
-			"url": "restoozoo.netlify.app"
+			"description": "My final submission for Dicoding Menjadi Front-End Web Developer Expert class.",
+			"url": "https://restoozoo.netlify.app",
+			"source": "https://github.com/fiqrisr/restozoo"
+		},
+		{
+			"title": "PWA Football Data",
+			"image": "pwa_football_data_website.png",
+			"description": "My final submission for Dicoding Membangun Progressive Web Apps class.",
+			"url": "https://pwa-football-data.web.app/",
+			"source": "https://github.com/fiqrisr/pwa-football-data"
+		},
+		{
+			"title": "Pong Terminal",
+			"image": "pong_terminal.png",
+			"description": "My old project when I learning C#.",
+			"source": "https://github.com/fiqrisr/pong-terminal"
 		}
 	]
 }
