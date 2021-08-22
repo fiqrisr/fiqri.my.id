@@ -24,5 +24,18 @@
 			"at": "Himpunan Mahasiswa Sistem Informasi FMIPA Untan",
 			"date": "2019 - 2020"
 		}
+	],
+	"skills": [
+		"HTML",
+		"CSS",
+		"Sass/Scss",
+		"JavaScript",
+		"TypeScript",
+		"Python",
+		"React",
+		"Express",
+		"NestJS",
+		"Linux",
+		"Docker"
 	]
 }

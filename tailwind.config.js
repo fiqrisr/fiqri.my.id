@@ -3,13 +3,13 @@ module.exports = {
 	purge: ['_site/**/*.html', 'src/_includes/**/*.njk', 'src/styles/**/*.css'],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
-		extend: {
-			fontFamily: {
-				mono: ['Roboto Mono', 'monospace']
-			}
+		fontFamily: {
+			mono: ['Roboto Mono', 'monospace']
 		},
-		height: {
-			'80vh': '80vh'
+		extend: {
+			height: {
+				'80vh': '80vh'
+			}
 		}
 	},
 	variants: {

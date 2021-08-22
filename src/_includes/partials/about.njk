@@ -6,17 +6,24 @@
 		<div id="{{ exp }}" class="my-10">
 			<h3 class="section-subtitle"><span class="text-blue-600">${</span>{{ exp }}<span class="text-blue-600">}</span></h3>
 
-			<ul>
-				{% for field in item %}
-					<li class="p-8 mb-5 bg-gray-200 shadow-md hover:shadow-lg transition md:p-10 rounded-xl last:mb-0">
-						<div class="inline-block space-y-2">
-							<h4 class="text-lg font-bold text-blue-600">{{ field.title }}</h4>
-							<p class="text-gray-800">{{ field.at }}</p>
-							<p class="text-gray-600">{{ field.date }}</p>
-						</div>
-					</li>
+			{% if exp == "skills" %}
+				{% for skill in item %}
+					<span class="inline-block px-4 py-3 mb-4 bg-gray-200 shadow-md rounded-xl hover:text-blue-600 hover:bg-gray-300 hover:shadow-lg transition">{{ skill }}</span>
 				{% endfor %}
-			</ul>
+			{% else %}
+				<ul>
+					{% for field in item %}
+						<li class="p-8 mb-5 bg-gray-200 shadow-md hover:shadow-lg transition md:p-10 rounded-xl last:mb-0">
+							<div class="inline-block space-y-2">
+								<h4 class="text-lg font-bold text-blue-600">{{ field.title }}</h4>
+								<p class="text-gray-800">{{ field.at }}</p>
+								<p class="text-gray-600">{{ field.date }}</p>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+
 		</div>	
 
 	{% endfor %}

@@ -6,23 +6,23 @@
 		<div id="{{ type }}" class="my-10">
 			<h3 class="section-subtitle"><span class="text-blue-600">${</span>{{ type }}<span class="text-blue-600">}</span></h3>
 
-			<ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+			<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 				{% for item in arr %}
-					<li class="bg-gray-200 shadow-md hover:shadow-lg transition rounded-xl flex flex-col">
+					<li class="flex flex-col bg-gray-200 shadow-md hover:shadow-lg transition rounded-xl">
 						<div class="p-1 rounded-xl">
 							<img src="./assets/images/projects/{{ item.image }}" alt="{{ item.title }}" class="rounded-lg">
 						</div>
-						<div class="p-8 flex-1 flex flex-col h-full">
-							<h4 class="text-md font-bold text-blue-600">{{ item.title }}</h4>
-							<p class="text-gray-800 mt-4 mb-5 flex-1">{{ item.description }}</p>
+						<div class="flex flex-col flex-1 h-full p-8">
+							<h4 class="font-bold text-blue-600 text-md">{{ item.title }}</h4>
+							<p class="flex-1 mt-4 mb-5 text-gray-800">{{ item.description }}</p>
 
 							<div>
 								{% if item.url %}
-									<a href="{{ item.url }}" class="text-white bg-blue-500 py-2 px-3 hover:bg-gray-300 hover:text-blue-600 rounded-lg shadow-md hover:shadow-lg transition" target="_blank" rel="noopener">Visit</a>
+									<a href="{{ item.url }}" class="px-3 py-2 text-white bg-blue-500 rounded-lg shadow-md hover:bg-gray-300 hover:text-blue-600 hover:shadow-lg transition" target="_blank" rel="noopener">Visit</a>
 								{% endif %}
 
 								{% if item.source %}
-									<a href="{{ item.source }}" class="text-white bg-gray-500 py-2 px-3 rounded-lg shadow-md hover:shadow-lg transition hover:bg-gray-300 hover:text-blue-600" target="_blank" rel="noopener">Source</a>
+									<a href="{{ item.source }}" class="px-3 py-2 text-white bg-gray-500 rounded-lg shadow-md hover:shadow-lg transition hover:bg-gray-300 hover:text-blue-600" target="_blank" rel="noopener">Source</a>
 								{% endif %}
 							</div>
 						</div>
