@@ -19,3 +19,7 @@ html {
 .section-subtitle {
 	@apply mb-5 text-xl md:text-2xl lg:text-3xl;
 }
+
+.input-text {
+	@apply block w-full max-w-md px-6 py-4 bg-gray-200 shadow rounded-xl focus:shadow-lg transition;
+}
