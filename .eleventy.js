@@ -1,7 +1,9 @@
 const pluginSEO = require('eleventy-plugin-seo');
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addPlugin(pluginSEO, require('./src/_data/seo.json'));
+	eleventyConfig.addPlugin(lazyImagesPlugin);
 
 	eleventyConfig.addPassthroughCopy('./src/assets');
 
