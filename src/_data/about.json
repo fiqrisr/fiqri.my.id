@@ -15,14 +15,14 @@
 	],
 	"organizations": [
 		{
-			"title": "Staff Divisi Akademik",
-			"at": "Himpunan Mahasiswa Sistem Informasi FMIPA Untan",
-			"date": "2019 - 2020"
-		},
-		{
 			"title": "Ketua Umum",
 			"at": "Himpunan Mahasiswa Sistem Informasi FMIPA Untan",
 			"date": "2020 - 2021"
+		},
+		{
+			"title": "Staff Divisi Akademik",
+			"at": "Himpunan Mahasiswa Sistem Informasi FMIPA Untan",
+			"date": "2019 - 2020"
 		}
 	]
 }

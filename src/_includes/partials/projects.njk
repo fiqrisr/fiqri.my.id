@@ -1,0 +1,26 @@
+<section id="projects" class="my-24">
+	<h2 class="section-title">.projects</h2>
+	
+	{% for type, arr in projects %}
+
+		<div id="{{ type }}" class="my-10">
+			<h3 class="section-subtitle"><span class="text-blue-600">${</span>{{ type }}<span class="text-blue-600">}</span></h3>
+
+			<ul class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4">
+				{% for item in arr %}
+					<li class="mb-5 bg-gray-200 shadow-md hover:shadow-lg transition rounded-xl last:mb-0">
+						<div class="p-1 rounded-xl">
+							<img src="./assets/images/projects/{{ item.image }}" alt="{{ item.title }}" class="rounded-t-lg">
+						</div>
+						<div class="p-8 space-y-2">
+							<h4 class="text-lg font-bold text-blue-600">{{ item.title }}</h4>
+							<p class="text-gray-600">{{ item.url }}</p>
+							<p class="text-gray-800">{{ item.description }}</p>
+						</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>	
+
+	{% endfor %}
+</section>

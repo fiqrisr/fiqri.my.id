@@ -1,0 +1,24 @@
+{
+	"real": [
+		{
+			"title": "GoodEdu Student",
+			"image": "goodedu_student_logo.png",
+			"description": "lorem ipsum sir dolor amet",
+			"url": "goodedu.id"
+		}
+	],
+	"labs": [
+		{
+			"title": "Restozoo",
+			"image": "restozoo_website.png",
+			"description": "",
+			"url": "restoozoo.netlify.app"
+		},
+		{
+			"title": "Restozoo",
+			"image": "restozoo_website.png",
+			"description": "",
+			"url": "restoozoo.netlify.app"
+		}
+	]
+}

@@ -5,17 +5,13 @@
 @tailwind utilities;
 
 .nav-btn {
-	@apply inline-block px-3 py-3 mx-2 rounded-xl hover:bg-gray-200 focus:bg-transparent focus:text-white hover:text-blue-600;
+	@apply inline-block px-3 py-3 mx-2 rounded-xl hover:bg-gray-200 hover:shadow-md transition hover:text-blue-600;
 }
 
 .section-title {
-	@apply mb-5 text-3xl text-center md:text-4xl lg:text-5xl;
+	@apply pb-5 mb-5 text-3xl text-center border-b-2 md:text-4xl lg:text-5xl;
 }
 
 .section-subtitle {
 	@apply mb-5 text-xl md:text-2xl lg:text-3xl;
-}
-
-.section-list-title {
-	@apply font-bold text-blue-600;
 }
