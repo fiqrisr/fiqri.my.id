@@ -1,3 +1,25 @@
-<section class="my-24">
+<section id="about" class="my-24">
 	<h2 class="section-title">.about</h2>
+
+	<p>Here's some things about me.</p>
+	
+	{% for exp, item in about %}
+
+		<div id="{{ exp }}" class="my-10">
+			<h3 class="section-subtitle"><span class="text-blue-600">${</span>{{ exp }}<span class="text-blue-600">}</span></h3>
+
+			<ul>
+				{% for field in item %}
+					<li class="p-4 mb-5 bg-gray-100 border-l-2 border-blue-600 last:mb-0">
+						<div class="inline-block">
+							<h4 class="section-list-title">{{ field.title }}</h4>
+							<p class="text-gray-800">{{ field.at }}</p>
+							<p class="text-gray-600">{{ field.date }}</p>
+						</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>	
+
+	{% endfor %}
 </section>

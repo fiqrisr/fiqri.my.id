@@ -1,0 +1,28 @@
+{
+	"work_experiences": [
+		{
+			"title": "Front-End Web Developer",
+			"at": "PT. Kita Super Tim",
+			"date": "Dec 2020 - Jun 2021"
+		}
+	],
+	"educations": [
+		{
+			"title": "Sistem Informasi",
+			"at": "Universitas Tanjungpura",
+			"date": "Agu 2018 - Current"
+		}
+	],
+	"organizations": [
+		{
+			"title": "Staff Divisi Akademik",
+			"at": "Himpunan Mahasiswa Sistem Informasi FMIPA Untan",
+			"date": "2019 - 2020"
+		},
+		{
+			"title": "Ketua Umum",
+			"at": "Himpunan Mahasiswa Sistem Informasi FMIPA Untan",
+			"date": "2020 - 2021"
+		}
+	]
+}
