@@ -9,9 +9,14 @@
 		<header>
 			{% include '../components/navbar.njk' %}
 		</header>
+		
 		<main class="px-5 text-gray-900">
 			{{ content | safe }}
 		</main>
+
+		<footer class="mt-12 mb-10">
+			{% include '../partials/footer.njk' %}
+		</footer>
 
 		<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
