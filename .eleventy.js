@@ -6,6 +6,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPlugin(lazyImagesPlugin);
 
 	eleventyConfig.addPassthroughCopy('./src/assets');
+	eleventyConfig.addPassthroughCopy('./src/scripts');
 
 	return {
 		HTMLTemplateEngine: 'njk',
