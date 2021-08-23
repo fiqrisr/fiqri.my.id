@@ -10,7 +10,7 @@
 		"dev": "concurrently \"ELEVENTY_ENV=development eleventy --serve\"  \"yarn watch:css\" \"yarn watch:js\"",
 		"build:css": "postcss src/styles/main.css > _site/styles.css",
 		"build:js": "esbuild src/scripts/index.js --bundle --minify --outfile=_site/index.js",
-		"build": "yarn clean && ELEVENTY_ENV=production eleventy && yarn build:css && yarn build:js"
+		"build": "yarn clean && ELEVENTY_ENV=production eleventy && concurrently \"yarn build:css\" \"yarn build:js\""
 	},
 	"keywords": [],
 	"author": "Fiqri Syah Redha",
