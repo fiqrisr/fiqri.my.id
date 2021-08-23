@@ -5,10 +5,12 @@
 	"main": "index.js",
 	"scripts": {
 		"clean": "rimraf _site",
-		"watch:css": "yarn tailwindcss --postcss -i ./src/styles/main.css -o ./_site/styles.css -w",
-		"dev": "concurrently \"ELEVENTY_ENV=development eleventy --serve\"  \"yarn watch:css\"",
+		"watch:css": "tailwindcss --postcss -i ./src/styles/main.css -o ./_site/styles.css -w",
+		"watch:js": "esbuild src/scripts/index.js --outfile=_site/index.js --bundle --watch",
+		"dev": "concurrently \"ELEVENTY_ENV=development eleventy --serve\"  \"yarn watch:css\" \"yarn watch:js\"",
 		"build:css": "postcss src/styles/main.css > _site/styles.css",
-		"build": "yarn clean && ELEVENTY_ENV=production eleventy && yarn build:css"
+		"build:js": "esbuild src/scripts/index.js --bundle --minify --outfile=_site/index.js",
+		"build": "yarn clean && ELEVENTY_ENV=production eleventy && yarn build:css && yarn build:js"
 	},
 	"keywords": [],
 	"author": "Fiqri Syah Redha",
@@ -20,6 +22,7 @@
 		"cssnano": "^5.0.7",
 		"eleventy-plugin-lazyimages": "^2.1.0",
 		"eleventy-plugin-seo": "^0.5.2",
+		"esbuild": "^0.12.22",
 		"postcss": "^8.3.6",
 		"postcss-cli": "^8.3.1",
 		"postcss-import": "^14.0.2",
