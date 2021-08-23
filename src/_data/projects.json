@@ -34,6 +34,18 @@
 			"image": "pong_terminal.png",
 			"description": "My old project when I learning C#.",
 			"source": "https://github.com/fiqrisr/pong-terminal"
+		},
+		{
+			"title": "Bulk Certificate Generator",
+			"image": "bulk-certificate-generator.png",
+			"description": "Simple script to generate many certificates based on list of names.",
+			"source": "https://github.com/fiqrisr/bulk-certificate-generator"
+		},
+		{
+			"title": "Bulk Certificate Sender",
+			"image": "bulk-certificate-sender.png",
+			"description": "Script to send many certificates from my bulk-certificate-generator to many emails.",
+			"source": "https://github.com/fiqrisr/bulk-certificate-sender"
 		}
 	]
 }
