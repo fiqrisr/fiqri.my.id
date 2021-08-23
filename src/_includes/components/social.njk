@@ -1,0 +1,5 @@
+<div class="my-4 grid gap-3 grid-flow-col auto-cols-max">
+	{% for key, item in social %}
+		<a href="{{ item }}" target="_blank" rel="noopener" class="flex items-center justify-center block p-4 text-xl bg-gray-200 shadow-md hover:shadow-lg hover:bg-gray-300 hover:text-blue-600 rounded-xl"><i class="icofont-{{ key }}"></i></a>
+	{% endfor %}
+</div>

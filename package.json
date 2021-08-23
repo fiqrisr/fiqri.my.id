@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"clean": "rimraf _site",
-		"watch:css": "yarn tailwindcss -i ./src/styles/main.css -o ./_site/styles.css -w",
+		"watch:css": "yarn tailwindcss --postcss -i ./src/styles/main.css -o ./_site/styles.css -w",
 		"dev": "concurrently \"ELEVENTY_ENV=development eleventy --serve\"  \"yarn watch:css\"",
 		"build:css": "postcss src/styles/main.css > _site/styles.css",
 		"build": "yarn clean && ELEVENTY_ENV=production eleventy && yarn build:css"
