@@ -23,7 +23,6 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addNunjucksAsyncShortcode('image', imageShortCode);
 
 	eleventyConfig.addPlugin(pluginSEO, require('./src/_data/seo.json'));
-	//eleventyConfig.addPlugin(lazyImagesPlugin);
 
 	eleventyConfig.addPassthroughCopy('./src/assets');
 	eleventyConfig.addPassthroughCopy('./src/robots.txt');
