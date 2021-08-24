@@ -1,9 +1,29 @@
 const pluginSEO = require('eleventy-plugin-seo');
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+const Image = require('@11ty/eleventy-img');
+
+const imageShortCode = async (src, alt, sizes) => {
+	let metadata = await Image(src, {
+		widths: [480, 640, null],
+		urlPath: './assets/images',
+		outputDir: './_site/assets/images'
+	});
+
+	let imageAttributes = {
+		alt,
+		sizes,
+		class: 'rounded-lg',
+		loading: 'lazy',
+		decoding: 'async'
+	};
+
+	return Image.generateHTML(metadata, imageAttributes);
+};
 
 module.exports = (eleventyConfig) => {
+	eleventyConfig.addNunjucksAsyncShortcode('image', imageShortCode);
+
 	eleventyConfig.addPlugin(pluginSEO, require('./src/_data/seo.json'));
-	eleventyConfig.addPlugin(lazyImagesPlugin);
+	//eleventyConfig.addPlugin(lazyImagesPlugin);
 
 	eleventyConfig.addPassthroughCopy('./src/assets');
 	eleventyConfig.addPassthroughCopy('./src/robots.txt');

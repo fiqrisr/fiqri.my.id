@@ -10,7 +10,7 @@
 				{% for item in arr %}
 					<li class="flex flex-col bg-gray-200 shadow-md hover:shadow-lg transition rounded-xl">
 						<div class="p-1 rounded-xl">
-							<img src="./assets/images/projects/{{ item.image }}" alt="{{ item.title }}" class="rounded-lg">
+							{% image "./src/project_images/" + item.image, item.title, "(min-width: 1024px) 33.3vw, 100vw" %}
 						</div>
 						<div class="flex flex-col flex-1 h-full p-8">
 							<h4 class="font-bold text-blue-600 text-md">{{ item.title }}</h4>
