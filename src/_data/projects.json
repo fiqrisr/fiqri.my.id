@@ -4,7 +4,12 @@
 			"title": "GoodEdu Student",
 			"image": "goodedu_student_logo.png",
 			"description": "This is my first real-world project when I worked as a front-end web developer at PT. Kita Super Tim.",
-			"url": "https://goodedu.id"
+			"url": "https://goodedu.school"
+		},
+		{
+			"title": "NekoToko POS",
+			"image": "nekotoko.png",
+			"description": "Point of Sale web app we make for Narkopika Coffee Shop as part of our internship program."
 		}
 	],
 	"labs": [

@@ -25,7 +25,7 @@
 			"date": "2019 - 2020"
 		}
 	],
-	"skills": [
+	"technical_skills": [
 		"HTML",
 		"CSS",
 		"Sass/Scss",
@@ -35,7 +35,8 @@
 		"React",
 		"Express",
 		"NestJS",
-		"GraphQL",
+		"Tailwind CSS",
+		"Redux",
 		"PWA",
 		"Linux",
 		"Docker"
